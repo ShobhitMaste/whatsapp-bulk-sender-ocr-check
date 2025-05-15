@@ -15,24 +15,16 @@ Install the following Python packages:
 
 ```bash
 pip install pyautogui keyboard pillow pytesseract opencv-python pygetwindow
+```
 Also install Tesseract OCR and add it to your system PATH.
 
 Example Tesseract install path:
-
-makefile
-Copy
-Edit
+```
 C:\Program Files\Tesseract-OCR\tesseract.exe
-🗂 Folder Structure
-php
-Copy
-Edit
-sms/
-├── final.py               # Main script
-├── num.txt                # List of phone numbers (one per line, without +91)
-└── trash/
-    └── check.png          # Temporary screenshot used for OCR
-📄 Setup Instructions
+```
+##Clone the Repo
+
+##📄 Setup Instructions
 Prepare a num.txt file with one phone number per line (without country code).
 
 Update the absolute path to check.png in the script if needed.
@@ -40,11 +32,9 @@ Update the absolute path to check.png in the script if needed.
 Launch https://web.whatsapp.com and scan the QR code.
 
 Run the script:
-
-bash
-Copy
-Edit
+```
 python final.py
+```
 ⚠️ Notes
 Coordinate clicks (like pg.click(540,164)) are screen-resolution dependent. Adjust them using a mouse coordinate tool if needed.
 
