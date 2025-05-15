@@ -4,12 +4,12 @@ and detects if a message has already been sent to a contact based on keywords. U
 
 This Python script sends WhatsApp messages in bulk via [web.whatsapp.com](https://web.whatsapp.com) while checking for duplicates using OCR (Optical Character Recognition). It detects if a message has already been sent to a contact based on screen text using `pytesseract`.
 
-## ⚙️ Features
+## Features
 - Automatically sends text and location to a list of phone numbers
 - Captures a screenshot of the chat window and uses OCR to detect previously sent messages
 - Skips numbers where the message was already sent
 
-## 🧰 Requirements
+##  Requirements
 
 Install the following Python packages:
 
@@ -24,7 +24,7 @@ C:\Program Files\Tesseract-OCR\tesseract.exe
 ```
 ##Clone the Repo
 
-##📄 Setup Instructions
+## Setup Instructions
 Prepare a num.txt file with one phone number per line (without country code).
 
 Update the absolute path to check.png in the script if needed.
@@ -35,14 +35,14 @@ Run the script:
 ```
 python final.py
 ```
-⚠️ Notes
+##⚠️ Notes
 Coordinate clicks (like pg.click(540,164)) are screen-resolution dependent. Adjust them using a mouse coordinate tool if needed.
 
 Make sure WhatsApp Web stays focused while the script runs.
 
 The messages and keywords for OCR can be changed directly in the script.
 
-🧠 How It Works
+## How It Works
 Opens WhatsApp Web.
 
 For each number in num.txt:
@@ -57,4 +57,4 @@ If keywords are found in the text, skip sending.
 
 Otherwise, paste the messages and send them.
 
-Author: Shobhit
+##Author: Shobhit Singh
