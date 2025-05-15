@@ -9,9 +9,10 @@ import pygetwindow
 import cv2
 import numpy as np
 
-message = 'जो मोबाइल की दुकान लोहे का जीना चढ़कर फर्स्ट फ्लोर पर G-101 सेक्टर- 9 में थी, \nअब वह पिछली गली में G-52 में चली गई है । \nMobile Repair Institute (MRI)\nNoida (नोएडा)\nजो पहले G-101, sector-9 में था अब G-52, First floor, Sector-9 में shift हो गया हैं।\nLocation share किया गया है।\nAnil Singh\nMob. No. 9811684490 /7373735462'
-message2 = 'https://maps.app.goo.gl/boykX4fDAkv4tViNA'
+message = 'Your Message Here'
+message2 = 'Message 2'
 
+#path to save temporary png to check if resending same msg to number or not
 path = 'C:\\Users\\Shobhit\Desktop\\Projects\\Python\\sms\\trash\\check.png'
 
 
@@ -60,8 +61,8 @@ def checkAlreadySent():
     #convert image to string
     text = pytesseract.image_to_string(resized)
 
-
-    keys = ["Mobile Repair Institute", "Anil Singh", "Noida", "9811684490"]
+    #put keys here 
+    keys = ["xxx", "yyy", "zzz", "hhh"]
     im.save(path)
     if any(k.lower() in text.lower() for k in keys):
         print("Don't proceed — already sent\n")
