@@ -35,7 +35,7 @@ Run the script:
 ```
 python final.py
 ```
-##⚠️ Notes
+## ⚠️ Notes
 Coordinate clicks (like pg.click(540,164)) are screen-resolution dependent. Adjust them using a mouse coordinate tool if needed.
 
 Make sure WhatsApp Web stays focused while the script runs.
